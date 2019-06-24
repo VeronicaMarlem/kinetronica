@@ -1,0 +1,225 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initia-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Kinetronica</title>
+	<meta name="description" content="Kinetronica pagina de consulta">
+	<meta name="keywords" content="Circuitos,Componentes,Kinetronica,Cursos,Sucursales">
+	<meta name="author" content="Veronica Marlem Carrillo Rodríguez">
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/estilos.css">
+	<link rel="stylesheet" href="../leaflet/leaflet.css" />
+	<script src="../leaflet/leaflet.js" type="text/javascript"></script>
+</head>
+	<body>
+ 	<!--MENU -->
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#">Kinetronica</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="../index.html">Inicio<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="productos.html">Productos</a>
+            </li>
+            <li class="nav-item">
+		<div class="dropdown show">
+  			<a class="nav-link dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    				Servicios a clientes
+  			</a>
+  		<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+   			<a class="dropdown-item danger" href="cursos.html">Cursos</a>
+    			<a class="dropdown-item" href="asesorias.html">Asesorias</a>
+  		</div>
+		</div>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown show">
+  			<a class="nav-link dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    				Sucursales
+  			</a>
+  		<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+   			<a class="dropdown-item danger" href="sucursalmx.html">Sucursal México</a>
+    			<a class="dropdown-item" href="sucursalpac.html">Sucursal Pachuca</a>
+			<a class="dropdown-item" href="sucursaltec.html">Sucursal Tec Pachuca</a>
+  		</div>
+		</div>
+            </li>
+          </ul>
+          <form class="form-inline mt-2 mt-md-0">
+            <a class="btn btn-outline-danger my-2 my-sm-0 " href="http://www.kinetroni.com" role="button">TIENDA ONLINE</a>
+          </form>
+        </div>
+      </nav>
+    </header>
+	<!--FIN MENU -->
+
+    <div class="container marketing">
+
+        <!-- START THE FEATURETTES -->
+        <br><br>
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">KINETRONICA <span class="text-muted">MATRIZ Y SUCURSAL D.F</span></h2>
+            <p class="lead">
+              <b>Direccion:</b> 
+              Cda. Cerro 3 Zapotes No. 3D Colonia Copilco Universidad Del. Coyoacan C.P. 04360 Mexico, D.F. 
+              </p>
+              <p class="lead">
+              <b>Tel. </b>
+              (0155)56580270
+              </p>
+              <p class="lead">
+              <b>Mandanos un correo a: </b>
+              <a href="#" class="alert-link">kinetronica@hotmail.com</a> 
+              </p>
+              <p class="lead">
+              <b>Referencias: </b>
+              Saliendo de la estacion del metro copilco.
+              </p>
+          </div>
+          <div class="col-md-5">
+            <div class="container" id="map"></div>
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading">KINETRONICA  
+                <span class="text-muted">SUCURSAL PACHUCA</span>
+              </h2>
+              <p class="lead">
+                <b>Direccion:</b> 
+                Blvd. Everardo Marquez No. 300, Exhacienda de coscotitlan. Pachuca Hidalgo C.P. 42094
+                </p>
+                <p class="lead">
+                <b>Tel. </b>
+                (044) 771 172 8198
+                </p>
+                <p class="lead">
+                <b>Mandanos un correo a: </b>
+                <a href="#" class="alert-link">kinetronica@hotmail.com</a> 
+                </p>
+                <p class="lead">
+                <b>Referencias: </b>
+                Enfrente de la Agencia Chevrolet 
+              </p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <div class="container" id="map1"></div>
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <div class="container text-left">
+              <h2 class="featurette-heading">KINETRONICA  
+                <span class="text-muted">SUCURSAL PACHUCA</span>
+              </h2>
+              <p class="lead">
+                <b>Direccion:</b> 
+                Andador 5 No. 16 esquina con Andador 8, Col. Venta Prieta Infonavit
+                </p>
+                <p class="lead">
+                <b>Tel. </b>
+                771 172 8198
+                </p>
+                <p class="lead">
+                <b>Mandanos un correo a: </b>
+                <a href="#" class="alert-link">kinetronica@hotmail.com</a> 
+                </p>
+                <p class="lead">
+                <b>Referencias: </b>
+                Cerca del Tec de Pachuca, enseguida de las bombas 
+              </p>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="container" id="map2"></div>
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!-- /END THE FEATURETTES -->
+
+<main role="main">
+<!-- Three columns of text below the carousel -->
+
+        <div class="row bg-dark container-fluid">
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="../imagenes/c1.png" alt="Generic placeholder image" width="140" height="140">
+            <h2><font color="white">Contacto</font></h2>
+            <p>
+            	<font color="white">Calle Tres Zapotes No. 3D,
+			<br>Coyoacan, 04360
+            		<br>Ciudad de Mexico, CDMX.
+            		<br>Tel. 771 172 8198
+            	</font>
+        	</p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="../imagenes/c2.png" alt="Generic placeholder image" width="140" height="140">
+            <h2><font color="white">Contacto</font></h2>
+            <p>
+            	<font color="white">Blvrd Everardo Márquez 300, 
+			<br>Coscotitlán, 42094 
+            		<br>Pachuca de Soto, Hgo.
+            		<br>Tel. 771 172 8198
+            	</font>
+            </p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="../imagenes/c1.png" alt="Generic placeholder image" width="140" height="140">
+            <h2><font color="white">Contacto</font></h2>
+            <p>
+            	<font color="white">Andador 5 No. 16 esquina con<br>Andador 8
+            		<br>Col. Venta Prieta Infonavit
+            		<br>Tel. 771 172 8198
+            	</font>
+            </p>
+          </div><!-- /.col-lg-4 -->
+          <div class="align-bottom">
+	            <p>
+	            	<a class="btn btn-outline-primary my-2 my-sm-0" href="https://facebook.com" role="button">Facebook</a> 
+	            	<a class="btn btn-outline-danger my-2 my-sm-0" href="https://gmail.com" role="button">Gmail</a>
+	            	<a class="btn btn-outline-primary my-2 my-sm-0" href="https://twitter.com" role="button">Twitter</a>
+	            	<a class="btn btn-outline-warning my-2 my-sm-0" href="https://instagram.com" role="button">Instagram</a>
+	            </p>
+            </div>
+        </div><!-- /.row -->
+
+      </div><!-- /.container -->
+
+
+      <!-- FOOTER -->
+      <footer class="container">
+        <p class="float-right"><a href="../index.html">Inicio</a></p>
+        <p>© 20??-2018 Kinetronica, Inc. · <a href="index.html">Privacidad</a> · <a href="terminosycondiciones.html">Términos y Condiciones</a></p>
+      </footer>
+      <!--FIN  FOOTER -->
+	
+	</main>
+
+		<script src="../js/jquery.js" type="text/javascript"></script>
+		<script src="../js/bootstrap.min.js" type="text/javascript"></script>
+		<script src="../js/map.js" type="text/javascript"></script>
+    <script src="../js/map1.js" type="text/javascript"></script>
+    <script src="../js/map2.js" type="text/javascript"></script>
+		
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500" preserveAspectRatio="none" style="display: none; visibility: hidden; position: absolute; top: -100%; left: -100%;"><defs><style type="text/css"></style></defs><text x="0" y="25" style="font-weight:bold;font-size:25pt;font-family:Arial, Helvetica, Open Sans, sans-serif">500x500</text></svg>
+
+	</body>
+</html> 

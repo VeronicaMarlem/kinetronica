@@ -1,0 +1,220 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initia-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Kinetronica</title>
+	<meta name="description" content="Kinetronica pagina de consulta">
+	<meta name="keywords" content="Circuitos,Componentes,Kinetronica,Cursos,Sucursales">
+	<meta name="author" content="Veronica Marlem Carrillo Rodríguez">
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/estilos.css">
+	<link rel="stylesheet" href="../leaflet/leaflet.css" />
+	<script src="../leaflet/leaflet.js" type="text/javascript"></script>
+</head>
+	<body>
+ 	<!--MENU -->
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#">Kinetronica</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="../index.html">Inicio<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="productos.html">Productos</a>
+            </li>
+            <li class="nav-item">
+		<div class="dropdown show">
+  			<a class="nav-link dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    				Servicios a clientes
+  			</a>
+  		<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+    			<a class="dropdown-item" href="asesorias.html">Asesor&iacute;as</a>
+  		</div>
+		</div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="forms/sucursales.html">Sucursales</a>
+            </li>
+          </ul>
+          <form class="form-inline mt-2 mt-md-0">
+            <a class="btn btn-danger my-2 my-sm-0 " href="http://www.kinetroni.com" role="button">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+            TIENDA ONLINE
+            </a>
+          </form>
+        </div>
+      </nav>
+    </header>
+	<!--FIN MENU -->
+
+    <div class="container marketing">
+
+        <!-- START THE FEATURETTES -->
+        <br><br>
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">KINETRONICA <span class="text-muted">MATRIZ Y SUCURSAL D.F</span></h2>
+            <p class="lead">
+              <b>Direcci&oacute;n:</b> 
+              Cda. Cerro 3 Zapotes No. 3D Colonia Copilco Universidad Del. Coyoac&aacute;n C.P. 04360 M&eacute;xico, D.F. 
+              </p>
+              <p class="lead">
+              <b>Tel. </b>
+              (0155)56580270
+              </p>
+              <p class="lead">
+              <b>M&aacute;ndanos un correo a: </b>
+              <a href="#" class="alert-link">kinetronica@hotmail.com</a> 
+              </p>
+              <p class="lead">
+              <b>Referencias: </b>
+              Saliendo de la estaci&oacute;n del metro copilco.
+              </p>
+          </div>
+          <div class="col-md-5">
+            <div class="container" id="map"></div>
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading">KINETRONICA  
+                <span class="text-muted">SUCURSAL PACHUCA</span>
+              </h2>
+              <p class="lead">
+                <b>Direcci&oacute;n:</b> 
+                Blvd. Everardo M&aacute;rquez No. 300, Exhacienda de Coscotitl&aacute;n. Pachuca Hidalgo C.P. 42094
+                </p>
+                <p class="lead">
+                <b>Tel. </b>
+                (044) 771 172 8198
+                </p>
+                <p class="lead">
+                <b>M&aacute;ndanos un correo a: </b>
+                <a href="#" class="alert-link">kinetronicapachuca@hotmail.com</a> 
+                </p>
+                <p class="lead">
+                <b>Referencias: </b>
+                Enfrente de la Agencia Chevrolet 
+              </p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <div class="container" id="map1"></div>
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <div class="container text-left">
+              <h2 class="featurette-heading">KINETRONICA  
+                <span class="text-muted">SUCURSAL PACHUCA TEC</span>
+              </h2>
+              <p class="lead">
+                <b>Direcci&oacute;n:</b> 
+                Andador 5 No. 16 esquina con Andador 8, Col. Venta Prieta Infonavit C.P. 42980
+                </p>
+                <p class="lead">
+                <b>Tel. </b>
+                771 172 8198
+                </p>
+                <p class="lead">
+                <b>M&aacute;ndanos un correo a: </b>
+                <a href="#" class="alert-link">kinetronicatec@gmail.com</a> 
+                </p>
+                <p class="lead">
+                <b>Referencias: </b>
+                Cerca del Tec de Pachuca, enseguida de las bombas 
+              </p>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="container" id="map2"></div>
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!-- /END THE FEATURETTES -->
+
+<main role="main">
+<!-- -----------------------------------------FOOTER ------------------------------------------------------------- -->
+      <footer class="pt-4 my-md-5 pt-md-5 border-top bg-dark container-fluid ">
+        <div class="row">
+          <div class="col-10 col-md">
+            <!--<img class="mb-2 ml-5" src="imagenes/kinetronicalogo.png" alt="" width="60" height="40">-->
+            <small class="d-block mb-3 ml-5 text-muted">&copy; 2018-2019<br>Kinetronica, Inc. </small>
+          </div>
+          <div class="col-6 col-md">
+            <font color="white">
+              <h5>Sucursal M&eacute;xico</h5>
+              <ul class="list-unstyled text-small">
+                <b>Direcci&oacute;n:</b> 
+                Cda. Cerro 3 Zapotes No. 3D Colonia Copilco Universidad Del. Coyoac&aacute;n C.P. 04360 M&eacute;xico, D.F.<br> 
+                <img class="rounded-circle" src="../imagenes/whatsapp.png" alt="Generic placeholder image" width="40" height="40">
+                (0155) 5658 0270<br>
+                <img class="rounded-circle" src="../imagenes/facebook.png" alt="Generic placeholder image" width="30" height="30">
+                <br>
+                <img class="rounded-circle" src="../imagenes/g.png" alt="Generic placeholder image" width="25" height="25">
+                <a href="#" class="alert-link">kinetronica@hotmail.com</a><br> 
+              </ul>
+            </font>
+          </div>
+          <div class="col-6 col-md">
+            <font color="white">
+              <h5>Sucursal Pachuca</h5>
+              <ul class="list-unstyled text-small">
+                <b>Direcci&oacute;n:</b> 
+                Blvd. Everardo M&aacute;rquez No. 300, Exhacienda de Coscotitl&aacute;n. Pachuca Hidalgo C.P. 42094<br> 
+                <img class="rounded-circle" src="../imagenes/whatsapp.png" alt="Generic placeholder image" width="40" height="40">
+                (044) 771 172 8198<br>
+                <img class="rounded-circle" src="../imagenes/facebook.png" alt="Generic placeholder image" width="30" height="30">
+                Kinetronica Pachuca Tienda<br>
+                <img class="rounded-circle" src="../imagenes/g.png" alt="Generic placeholder image" width="25" height="25">
+                <font size="2"><a href="#" class="alert-link">kinetronicapachuca@hotmail.com</a><br></font>
+              </ul>
+            </font>
+          </div>
+          <div class="col-6 col-md">
+            <font color="white">
+              <h5>Sucursal Tec </h5>
+              <ul class="list-unstyled text-small">
+                <b>Direcci&oacute;n:</b> 
+                Andador 5 No. 16 esquina con Andador 8, Col. Venta Prieta Infonavit C.P. 42080<br> <br>
+                <img class="rounded-circle" src="../imagenes/whatsapp.png" alt="Generic placeholder image" width="40" height="40">
+                771 172 8198<br>
+                <img class="rounded-circle" src="../imagenes/facebook.png" alt="Generic placeholder image" width="30" height="30">
+                Kinetronica Tec Pachuca<br>
+                <img class="rounded-circle" src="../imagenes/g.png" alt="Generic placeholder image" width="25" height="25">
+                <a href="#" class="alert-link">kinetronicatec@gmail.com</a><br>
+              </ul>
+            </font>
+          </div>
+        </div>
+      <p class="float-right"><a href="sucursales.html">Inicio</a></p>
+      </footer>
+<!--------------------------------------------------------FIN  FOOTER ------------------------------------------------------>
+	
+	</main>
+
+		<script src="../js/jquery.js" type="text/javascript"></script>
+		<script src="../js/bootstrap.min.js" type="text/javascript"></script>
+		<script src="../js/map.js" type="text/javascript"></script>
+    <script src="../js/map1.js" type="text/javascript"></script>
+    <script src="../js/map2.js" type="text/javascript"></script>
+		
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500" preserveAspectRatio="none" style="display: none; visibility: hidden; position: absolute; top: -100%; left: -100%;"><defs><style type="text/css"></style></defs><text x="0" y="25" style="font-weight:bold;font-size:25pt;font-family:Arial, Helvetica, Open Sans, sans-serif">500x500</text></svg>
+
+	</body>
+</html> 
